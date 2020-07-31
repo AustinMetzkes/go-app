@@ -1,18 +1,127 @@
-
 .container {
     position: relative;
     text-align: center;
     color: white;
-  }
+}
 
-  .centered {
+.centered {
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-  }
+    color: white;
+    padding: 15px;
+    background-color: gray;
+}
+
+#profile {
+    overflow: overlay;
+    margin: auto;
+    width: 75%;
+    border: 3px solid gray;
+    background-color: gray;
+    padding: 15px;
+    color: white;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 40px;
+}
+
+#profilepic {
+    max-width: 100%;
+    height: auto;
+    float: right;
+    border-radius: 50%;
+    object-fit: contain;
+    padding-left: 15px;
+    background-size: contain;
+}
+
+#quote {
+    overflow: overlay;
+    margin: auto;
+    width: 75%;
+    border: 3px solid gray;
+    background-color: gray;
+    padding: 15px;
+    color: white;
+    max-width: 100%;
+    max-height: 100%;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+}
+
+#quotepic {
+    max-width: 100%;
+    height: auto;
+    float: left;
+    border-radius: 50%;
+    object-fit: contain;
+    padding-right: 15px;
+    background-size: contain;
+}
+
+
+/*Resume portion*/
+
+#xppoints {
+    overflow: overlay;
+    margin: auto;
+    width: 75%;
+    border: 3px solid gray;
+    background-color: gray;
+    padding: 15px;
+    color: white;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 25px;
+}
+
+#freed {
+    overflow: overlay;
+    margin: auto;
+    width: 75%;
+    border: 3px solid gray;
+    background-color: gray;
+    padding: 15px;
+    color: white;
+    max-width: 100%;
+    max-height: 100%;
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+#skillz {
+    overflow: overlay;
+    margin: auto;
+    width: 75%;
+    border: 3px solid gray;
+    background-color: gray;
+    padding: 15px;
+    color: white;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 25px;
+}
+
+#projektz {
+    overflow: overlay;
+    margin: auto;
+    width: 75%;
+    border: 3px solid gray;
+    background-color: gray;
+    padding: 15px;
+    color: white;
+    max-width: 100%;
+    max-height: 100%;
+    margin-bottom: 25px;
+}
+
+
+/*Resume portion*/
 
 footer {
+    margin-top: 60px;
     text-align: center;
     position: fixed;
     left: 0;
@@ -22,4 +131,4 @@ footer {
     padding-top: 5px;
     background-color: #222222;
     color: white;
-  }
+}
