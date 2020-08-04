@@ -8,6 +8,57 @@ Tufts blue: 3192d7
 
 /* The flip card container - set the width and height to whatever you want. We have added the border property to demonstrate that the flip itself goes out of the box on hover (remove perspective if you don't want the 3D effect */
 
+#card {
+    width: 100%;
+    height: 100%;
+    /* Set width of cards */
+    border: 1px solid #3192d7;
+    /* Set up Border */
+    border-radius: 4px;
+    /* Slightly Curve edges */
+    overflow: hidden;
+    /* Fixes the corners */
+    display: flex;
+    /* Children use Flexbox */
+    flex-direction: column;
+    /* Rotate Axis */
+}
+
+#icon {
+    vertical-align: top;
+    font-size: 36px;
+    margin-bottom: 5px;
+}
+
+.card-header {
+    color: #3192d7;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    border-bottom: 1px solid #3192d7;
+    background-color: #DCFFFB;
+    padding: 5px 10px;
+}
+
+.main-description {
+    color: #ffffff;
+    font-size: 14px;
+    text-align: center;
+}
+
+.card-main {
+    display: flex;
+    /* Children use Flexbox */
+    flex-direction: column;
+    /* Rotate Axis to Vertical */
+    justify-content: center;
+    /* Group Children in Center */
+    align-items: center;
+    /* Group Children in Center (+axis) */
+    padding: 15px 0;
+    /* Add padding to the top/bottom */
+}
+
 .wrap {
     display: flex;
 }
@@ -39,9 +90,9 @@ Tufts blue: 3192d7
     background-color: transparent;
     width: 200px;
     height: 150px;
-    border: 1px solid #f1f1f1;
     perspective: 1000px;
-    margin: 10px;
+    margin: 15px;
+    border-radius: 4px;
     /* Remove this if you don't want the 3D effect */
 }
 
@@ -82,7 +133,7 @@ Tufts blue: 3192d7
 /* Style the front side (fallback if image is missing) */
 
 .flip-card-front {
-    background-color: #bbb;
+    background-color: lightslategray;
     color: black;
 }
 
@@ -90,9 +141,11 @@ Tufts blue: 3192d7
 /* Style the back side */
 
 .flip-card-back {
-    background-color: #3192d7;
-    color: white;
+    background-color: #DCFFFB;
+    color: #3192d7;
     transform: rotateY(180deg);
+    border: 1px solid #3192d7;
+    border-radius: 4px;
 }
 
 

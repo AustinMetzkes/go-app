@@ -8,6 +8,10 @@
     <title>Material Design Bootstrap</title>
     <link href="css/app.css" rel="stylesheet">
     <link rel="stylesheet" href="app.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,600" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+
     <!-- Font Awesome -->
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css">
     <!-- Bootstrap core CSS -->
@@ -110,8 +114,26 @@
     <div style="width: 75%; margin-left: auto; margin-right: auto;" class="wrap">
         <div class="flip-card" id="one">
             <div class="flip-card-inner">
-                <div class="flip-card-front">
-                    <img src="img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                <div class="flip-card-front" id="card">
+                    <div class="card-header">Languages</div>
+                    <div class="card-main">
+                        <table>
+                            <tr>
+                                <th>
+                                    <i class="devicon-go-plain colored" id="icon" style="font-size: 55px; float: left; color: #29BEB0;"></i>
+                                </th>
+                                <th>
+                                    <i class="devicon-python-plain colored" id="icon" style="font-size: 55px; float: right;"></i>
+                                </th>
+                            </tr>
+                            <!--
+                                <tr>
+                                <img style="width: auto; height: 50px;" src="pics/gnubash.svg" />
+                            </tr>
+                        -->
+                        </table>
+                        <h5 class="main-description">Go/Python/Bash</h5>
+                    </div>
                 </div>
                 <div class="flip-card-back">
                     <h3>Bash/Go/Python</h3>
@@ -123,7 +145,7 @@
         <div class="flip-card" id="two">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                    <img src="pics/htmlcss.png" alt="Avatar" style="width:100%;height:100%;">
                 </div>
                 <div class="flip-card-back">
                     <h3>HTML/CSS</h3>
@@ -161,19 +183,19 @@
         <div class="flip-card" id="two">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                    <img src="pics/networking.png" alt="Avatar" style="width:100%;height:100%;">
                 </div>
                 <div class="flip-card-back">
                     <h3>Networking</h3>
-                    <p>Architect & Engineer</p>
-                    <p>We love that guy</p>
+                    <p>Uqiquiti and firewalls</p>
+                    <p>I know networking and have been doing it for a year</p>
                 </div>
             </div>
         </div>
         <div class="flip-card" id="three">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                    <img src="pics/troubleshooting.png" alt="Avatar" style="width:100%;height:100%;">
                 </div>
                 <div class="flip-card-back">
                     <h3>Troubleshooting</h3>
@@ -187,7 +209,7 @@
         <div class="flip-card" id="one">
             <div class="flip-card-inner">
                 <div class="flip-card-front">
-                    <img src="img_avatar.png" alt="Avatar" style="width:100%;height:100%;">
+                    <img src="pics/communication.png" alt="Avatar" style="width:100%;height:100%;">
                 </div>
                 <div class="flip-card-back">
                     <h3>Communication</h3>
