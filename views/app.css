@@ -28,6 +28,7 @@ Tufts blue: 3192d7
     vertical-align: top;
     font-size: 36px;
     margin-bottom: 5px;
+    font-size: 55px;
 }
 
 .card-header {
@@ -41,7 +42,7 @@ Tufts blue: 3192d7
 }
 
 .main-description {
-    color: #ffffff;
+    color: black;
     font-size: 14px;
     text-align: center;
 }
@@ -133,7 +134,7 @@ Tufts blue: 3192d7
 /* Style the front side (fallback if image is missing) */
 
 .flip-card-front {
-    background-color: lightslategray;
+    background-color: gainsboro;
     color: black;
 }
 
@@ -245,6 +246,34 @@ textarea {
     object-fit: contain;
     padding-left: 15px;
     background-size: contain;
+}
+
+@import "compass/css3";
+.blockquote {
+    position: relative;
+    font-family: 'Sanchez', serif;
+    font-size: 2.4em;
+    line-height: 1.5em;
+    footer {
+        font-family: 'Noto Sans', sans-serif;
+        font-size: 0.6em;
+        font-weight: 700;
+        color: darken($white, 15%);
+        float: right;
+        &:before {
+            content: '\2015';
+        }
+    }
+    &:after {
+        content: '\201D';
+        position: absolute;
+        top: 0.28em;
+        right: 0;
+        font-size: 6em;
+        font-style: italic;
+        color: darken($white, 7%);
+        z-index: -1;
+    }
 }
 
 #quote {
